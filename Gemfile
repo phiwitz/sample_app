@@ -29,10 +29,11 @@ gem 'jquery-rails' # This gem provides jQuery and the jQuery-ujs driver for your
 
 # Test gems on Linux
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara', '1.1.2' # A Ruby wrapper for Windows Kernel functions for monitoring the specified directory or subtree
   # gem 'rb-inotify', '0.8.8'
-  gem 'rb-inotify', '~> 0.9'
-  gem 'libnotify', '0.5.9'
+  gem 'rb-inotify', '~> 0.9' # A Ruby wrapper for Linux's inotify, using FFI
+  gem 'libnotify', '0.5.9' # Ruby bindings for libnotify using FFI
+  gem 'factory_girl_rails', '4.1.0' # factory_girl_rails provides integration between factory_girl and rails 3 (currently just automatic factory definition loading)
 end 
 
 =begin
