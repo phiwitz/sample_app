@@ -34,6 +34,8 @@ group :test do
   gem 'rb-inotify', '~> 0.9' # A Ruby wrapper for Linux's inotify, using FFI
   gem 'libnotify', '0.5.9' # Ruby bindings for libnotify using FFI
   gem 'factory_girl_rails', '4.1.0' # factory_girl_rails provides integration between factory_girl and rails 3 (currently just automatic factory definition loading)
+  gem 'cucumber-rails', '1.2.1', :require => false #
+  gem 'database_cleaner', '0.7.0' #
 end 
 
 =begin
