@@ -120,4 +120,12 @@ describe "with a password that's too short" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
   end
+
+  describe "accesible attributes" do
+    it "should not allow access to admin" do
+     expect do
+        User.new(admin: true) 
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end
+  end
 end
